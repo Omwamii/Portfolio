@@ -40,7 +40,9 @@ function Home() {
               />
             </Col>
           </Row>
-          <Row style={{ marginTop: "-30px" }}>
+        </Container>
+      </Container>
+      <Row style={{ marginTop: "-120px" }}>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
@@ -81,16 +83,14 @@ function Home() {
           </Col>
           </Row>
           <Row>
-            <Col style={{ marginTop: "10px"}}>
+            <Col style={{ marginTop: "10px" }}>
                 <h2 style={{ color: "white", textAlign: "center", fontSize: "30px" }}>Contact me for Work on</h2>
                 <div id="work-section">
-                  <a href="mailto:alphaian020@gmail.com" target="_blank" rel="noopener" className="nav-link"><span className="purple" style={{ fontSize: "20px", fontWeight: "bold"}}>Email</span></a>
-                  <a href="https://www.upwork.com/freelancers/~016b2e1458a553b690?mp_source=share" target="_blank" rel="noopener" className="nav-link"><span className="purple" style={{ fontSize: "20px", fontWeight: "bold"}}>Upwork</span></a>
+                  <a href="mailto:alphaian020@gmail.com" target="_blank" rel="noreferrer" className="nav-link"><span className="purple" style={{ fontSize: "20px", fontWeight: "bold"}}>Email</span></a>
+                  <a href="https://www.upwork.com/freelancers/~016b2e1458a553b690?mp_source=share" target="_blank" className="nav-link" rel="noreferrer"><span className="purple" style={{ fontSize: "20px", fontWeight: "bold"}}>Upwork</span></a>
                 </div>
             </Col>
           </Row>
-        </Container>
-      </Container>
     </section>
   );
 }
