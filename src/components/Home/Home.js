@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
@@ -39,9 +40,57 @@ function Home() {
               />
             </Col>
           </Row>
+          <Row style={{ marginTop: "-30px" }}>
+          <Col md={12} className="home-about-social">
+            <h1>FIND ME ON</h1>
+            <p>
+              Feel free to <span className="purple">connect </span>with me
+            </p>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Omwamii"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://x.com/SageOppp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/ianalpha/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+            </ul>
+          </Col>
+          </Row>
+          <Row>
+            <Col style={{ marginTop: "10px"}}>
+                <h2 style={{ color: "white", textAlign: "center", fontSize: "30px" }}>Contact me for Work on</h2>
+                <div id="work-section">
+                  <a href="mailto:alphaian020@gmail.com" target="_blank" rel="noopener" className="nav-link"><span className="purple" style={{ fontSize: "20px", fontWeight: "bold"}}>Email</span></a>
+                  <a href="https://www.upwork.com/freelancers/~016b2e1458a553b690?mp_source=share" target="_blank" rel="noopener" className="nav-link"><span className="purple" style={{ fontSize: "20px", fontWeight: "bold"}}>Upwork</span></a>
+                </div>
+            </Col>
+          </Row>
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }

@@ -6,6 +6,9 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import homeLogo from "../../Assets/home-main.svg";
+import myImg from "../../Assets/avatar.svg";
+import Tilt from "react-parallax-tilt";
 
 function About() {
   return (
@@ -21,17 +24,15 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I AM</strong>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", marginTop: "-50px" }}>
+              Who <strong className="purple">AM I</strong> ? 🤔
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+          <Col md={4} className="myAvtar">
+            <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
           </Col>
         </Row>
         <h1 className="project-heading">

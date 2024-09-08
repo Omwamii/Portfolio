@@ -5,15 +5,15 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import MusicPlayer from "../../Assets/Projects/music-player.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
-      <Container>
+      <Container style={{ marginTop: "-15px"}}>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
@@ -23,67 +23,67 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              // imgPath={MusicPlayer}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Spo2yt"
+              description="A web app that converts Spotify Playlists to Youtube Music Playlists 🎶. Allowing users to see music videos for their favourite playlist songs 🤩. 
+              Built with Flask, Youtube Data API, and Spotipy python library"
+              ghLink="https://github.com/Omwamii/Spotify_to_Youtube_playlists"
+              demoLink="https://youtu.be/Kcdp6nVLiqA?si=BhEtj2fVZDKnMQu6"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              // imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Google Classroom Assignments Manager"
+              description="A platform to help students to easily manage their assignments including viewing grading statistics. Built with Django, React, Bootstrap, Google Classroom API and Google Drive API"
+              ghLink="https://github.com/Omwamii/Google-Assignments-Manager"
+              demoLink="https://youtu.be/LD90tDF5B9Y?si=47JHRDLYp94s7gFD"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              // imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Social Networking Site"
+              description="Built a Twitter-like networking site, where users can follow, like and comment on each other's posts. Built with React.Js and Django"
+              ghLink="https://github.com/Omwamii/CS50-Web-projects/tree/main/project4"
+              demoLink="https://youtu.be/GB9u3o0CfLI?si=wo0UQkwlL0HLEDGj"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              // imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Web Business Reviewing Platform"
+              description="A platform for users to review business services by leaving their feedback on business pages. Users can then search for businesses based on their locations and chose on what business to patronize based on their ratings."
+              ghLink="https://github.com/Omwamii/Yelp-clone"
+              demoLink="https://youtu.be/9d8feCUF2ec?si=AWsRqQl71haZwmGt"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              // imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Auction Site"
+              description="A site for users to bid on items and make listings for other users to bid on. Built with Django, Bootstrap, HTML & CSS, JavaScript."
+              ghLink="https://github.com/Omwamii/CS50-Web-projects/tree/main/commerce"
+              demoLink="https://youtu.be/5tBj9MFe67E?si=Sib0EiNKjNm3KBRZ"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              // imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Files Manager"
+              description="A files manager built from scratch using Node.js, Redis and MongoDB"
+              ghLink="https://github.com/Omwamii/alx-files_manager"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
