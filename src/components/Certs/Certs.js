@@ -40,7 +40,7 @@ function Certs() {
         <Particle />
         <Row className="resume">
           <Document file={alxCert} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={SetScale()} />
+            <Page pageNumber={1} scale={SetScale(true)} />
           </Document>
         </Row>
 
