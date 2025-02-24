@@ -4,6 +4,7 @@ import Particle from "../Particle";
 import cs50cert from "../../Assets/CS50W.pdf";
 import sqlCert from "../../Assets/sqlcert.pdf";
 import responsiveCert from "../../Assets/responsive.pdf";
+import alxCert from "../../Assets/alx-cert.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -38,10 +39,17 @@ function Certs() {
       <Container fluid className="resume-section">
         <Particle />
         <Row className="resume">
+          <Document file={alxCert} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={SetScale()} />
+          </Document>
+        </Row>
+
+        <Row className="resume">
           <Document file={cs50cert} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={SetScale()} />
           </Document>
         </Row>
+
         <br />
         <Row className="resume">
           <Document file={sqlCert} className="d-flex justify-content-center">
@@ -49,6 +57,7 @@ function Certs() {
           </Document>
         </Row>
         <br />
+
         <Row className="resume">
           <Document file={responsiveCert} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={SetScale()} />
